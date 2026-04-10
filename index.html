@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/file/pf.jpg" alt="Profile Picture">
+        </div>
+        <h1 id="hdr">Welcome to My Portfolio</h1>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About Me</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="hero-content">
+            <br><br><br><br>
+            <h2>Hello, I'm a Dean Louise</h2>
+            <p>Welcome to my portfolio. I'm a BSIT student at Phinma Araullo University.</p>
+            <p>This Portfolio contain some of my projects and activities.</p>
+            <button class="cta-button" onclick="scrollToSection('projects')">View My Work</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <br><br><br><br>
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I'm a passionate developer with experience in web development. I love creating clean, responsive websites and learning new technologies.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <br><br><br><br>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Lutong Estudyante</h3>
+                <p>A small project for G10 students during their junior high research</p>
+                <a href="https://dino0207.github.io/Lutong_Estudyante/" target="_blank" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>399 Activity</h3>
+                <p>A simple but not responsive website using html and css. It's a basic implentation of simple frameworks</p>
+                <a href="https://dino0207.github.io/joyce/index.html" target="_blank" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>My Portfolio</h3>
+                <p>A portfolio website showcasing my skills and experience in web development and design.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <br><br><br><br>
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>I'd love to hear from you! Feel free to reach out.</p>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
