@@ -141,6 +141,7 @@ body {
 
 /* CTA Button */
 .cta-button {
+    text-decoration: none;
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
