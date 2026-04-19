@@ -338,7 +338,7 @@ html {
     }
 
     #hdr {
-        margin-right: 0;
+        margin-left: auto;
         margin-bottom: 0;
         font-size: 1.5rem;
     }
