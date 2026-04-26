@@ -1,4 +1,4 @@
-// Hamburger menu
+// hamburger menu
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navbar = document.getElementById('navbar');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.toggle('active');
     });
 
-    // Close menu when a nav item is click
+    // close menu when a nav item is click
     navItems.forEach(item => {
         item.addEventListener('click', function() {
             hamburger.classList.remove('active');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Smooth scroll
+// smooth scroll
 function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -26,42 +26,29 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Activate Email
-(function() {
-    emailjs.init("YOUR_PUBLIC_KEY");
-})();
-
-// Handle form
+// handle form
 function handleSubmit(event) {
     event.preventDefault();
     
-    // Take form parameters
+    // get form inputs
     const form = event.target;
     const name = form.querySelector('input[type="text"]').value;
     const email = form.querySelector('input[type="email"]').value;
     const message = form.querySelector('textarea').value;
     
-    // email senddd
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-        to_email: "deanlouise556@gmail.com",
-        from_email: email,
-        from_name: name,
-        message: message
-    }).then(function(response) {
-        alert(`Thank you ${name}! Your message has been sent to my email. I'll get back to you at ${email} soon.`);
-        form.reset();
-    }, function(error) {
-        alert('Failed to send message. Please try again.');
-        console.log('FAILED...', error);
-    });
+    // success
+    alert(`Thank you ${name}! Your message has been received. I'll get back to you at ${email} soon.`);
+    
+    // reset form
+    form.reset();
 }
 
-// Add active state to nav-items
+// add active state to nav-items
 document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-item');
     const sections = document.querySelectorAll('section');
     
-    // Highlight active nav-item on scroll
+    // highlight active nav-item
     window.addEventListener('scroll', function() {
         let currentSection = '';
         
@@ -83,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add animation to project-cards
+// add animation to project-cards
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
