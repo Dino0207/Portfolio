@@ -28,7 +28,6 @@ header {
     z-index: 1000;
 }
 
-/* Logo */
 .logo img {
     width: 55px;
     height: 55px;
@@ -36,7 +35,6 @@ header {
     margin-right: 15px;
 }
 
-/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -139,7 +137,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* CTA Button */
 .cta-button {
     text-decoration: none;
     background-color: var(--primary-color);
@@ -160,7 +157,6 @@ body {
     transform: scale(1.05);
 }
 
-/* About Section */
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -200,7 +196,6 @@ body {
     border-left: 3px solid var(--secondary-color);
 }
 
-/* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -246,7 +241,6 @@ body {
     margin-left: 5px;
 }
 
-/* Contact Form */
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
@@ -301,7 +295,6 @@ body {
     transform: scale(1.02);
 }
 
-/* Footer */
 footer {
     background-color: rgba(2, 145, 2, 0.2);
     border-top: 3px solid var(--primary-color);
@@ -311,7 +304,6 @@ footer {
     margin-top: 50px;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -323,7 +315,6 @@ footer {
     }
 }
 
-/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
@@ -338,7 +329,7 @@ html {
     }
 
     #hdr {
-        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 0;
         font-size: 1.5rem;
     }
