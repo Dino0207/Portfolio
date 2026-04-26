@@ -11,7 +11,7 @@
         <div class="logo">
             <img src="/file/pf.jpg" alt="Profile Picture">
         </div>
-        <h1 id="hdr">My Portfolio</h1>
+        <h1 id="hdr">Welcome to My Portfolio</h1>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -39,7 +39,7 @@
         <br><br><br><br>
         <h2>About Me</h2>
         <div class="about-content">
-            <p>I'm a passionate developer in web development. I love creating clean, responsive websites and learning new technologies.</p>
+            <p>I'm a passionate developer with experience in web development. I love creating clean, responsive websites and learning new technologies.</p>
             <div class="skills">
                 <h3>Skills</h3>
                 <ul>
@@ -65,7 +65,7 @@
             <div class="project-card">
                 <h3>399 Activity</h3>
                 <p>A simple but not responsive website using html and css. It's a basic implentation of simple frameworks</p>
-                <a href="https://dino0207.github.io/Dino/" target="_blank" class="project-link">View Project →</a>
+                <a href="https://dino0207.github.io/joyce/index.html" target="_blank" class="project-link">View Project →</a>
             </div>
             <div class="project-card">
                 <h3>My Portfolio</h3>
@@ -80,19 +80,20 @@
         <h2>Get In Touch</h2>
         <div class="contact-content">
             <p>I'd love to hear from you! Feel free to reach out.</p>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+            <form class="contact-form" onsubmit="handleSubmit(event)" id="contactForm">
+                <input type="text" placeholder="Your Name" name="user_name" required>
+                <input type="email" placeholder="Your Email" name="user_email" required>
+                <textarea placeholder="Your Message" rows="5" name="message" required></textarea>
                 <button type="submit" class="submit-button">Send Message</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Dino's Portfolio. HCI Final Proj.</p>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
