@@ -82,8 +82,7 @@ header {
 }
 
 #hdr {
-    margin-right: auto;
-    margin-left: 0;
+    margin-right: 10px;
 }
 
 body {
