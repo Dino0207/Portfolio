@@ -73,3 +73,17 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 });
+
+// reset contact form
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function() {
+            
+            setTimeout(() => {
+                contactForm.reset();
+            }, 50);
+        });
+    }
+});
