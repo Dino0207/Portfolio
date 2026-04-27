@@ -26,23 +26,6 @@ function scrollToSection(sectionId) {
     }
 }
 
-// handle form
-function handleSubmit(event) {
-    event.preventDefault();
-    
-    // get form inputs
-    const form = event.target;
-    const name = form.querySelector('input[type="text"]').value;
-    const email = form.querySelector('input[type="email"]').value;
-    const message = form.querySelector('textarea').value;
-    
-    // success
-    alert(`Thank you ${name}! Your message has been received. I'll get back to you at ${email} soon.`);
-    
-    // reset form
-    form.reset();
-}
-
 // add active state to nav-items
 document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-item');
